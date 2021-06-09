@@ -25,3 +25,12 @@ puts
 puts "Enter first number"
 num_1 = gets.chomp
 puts "Enter second number"
+num_2 = gets.chomp
+
+puts "First number multiplied by second number is #{num_1.to_f * num_2.to_f}"
+puts "First number divided by second number is #{num_1.to_f / num_2.to_f}"
+puts "First number added to second number is #{num_1.to_f + num_2.to_f}"
+puts "First number subtracted from second number is #{num_1.to_f - num_2.to_f}"
+
+#modulus is the % sign and it returns the remainder after a division
+puts "First number and second number modulus is #{num_1.to_f % num_2.to_f}"
