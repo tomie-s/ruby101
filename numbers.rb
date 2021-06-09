@@ -27,10 +27,37 @@ num_1 = gets.chomp
 puts "Enter second number"
 num_2 = gets.chomp
 
-puts "First number multiplied by second number is #{num_1.to_f * num_2.to_f}"
-puts "First number divided by second number is #{num_1.to_f / num_2.to_f}"
-puts "First number added to second number is #{num_1.to_f + num_2.to_f}"
-puts "First number subtracted from second number is #{num_1.to_f - num_2.to_f}"
+# puts "First number multiplied by second number is #{num_1.to_f * num_2.to_f}"
+# puts "First number divided by second number is #{num_1.to_f / num_2.to_f}"
+# puts "First number added to second number is #{num_1.to_f + num_2.to_f}"
+# puts "First number subtracted from second number is #{num_1.to_f - num_2.to_f}"
 
-#modulus is the % sign and it returns the remainder after a division
-puts "First number and second number modulus is #{num_1.to_f % num_2.to_f}"
+# #modulus is the % sign and it returns the remainder after a division
+# puts "First number and second number modulus is #{num_1.to_f % num_2.to_f}"
+
+#Using METHODS to improve calculator code
+def multiply (num_1, num_2)
+    num_1.to_f * num_2.to_f
+end
+
+def divide (num_1, num_2)
+    num_1.to_f / num_2.to_f
+end
+
+def add (num_1, num_2)
+    num_1.to_f + num_2.to_f
+end
+
+def subtract (num_1, num_2)
+    num_1.to_f - num_2.to_f
+end
+
+def mod (num_1, num_2)
+    num_1.to_f % num_2.to_f
+end
+
+puts "First number multiplied by second number is #{multiply(num_1, num_2)}"
+puts "First number divided by second number is #{divide(num_1, num_2)}"
+puts "First number added to second number is #{add(num_1, num_2)}"
+puts "First number subtracted from second number is #{subtract(num_1, num_2)}"
+puts "First number mod second number is #{mod(num_1, num_2)}"
